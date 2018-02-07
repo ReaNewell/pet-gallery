@@ -1,0 +1,82 @@
+#phoebe, #phoebe-stationary {
+    background-image: url('../img/phoebe-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#phoebe-stationary {
+    width: 35vw;
+}
+
+
+#phoebe-info {
+    margin-left: 8px;
+}
+#phoebe-info h1 {
+    position: absolute;
+    bottom: 54%;
+}
+#phoebe-info button{
+    position: absolute;
+    bottom: 52%;
+    right: 4px;
+}
+#phoebe-info a {
+    position: absolute;
+    bottom: 52%;
+    left: 4px;
+}
+#phoebe-info p {
+    display: none;
+}
+#phoebe:hover #phoebe-info {
+    visibility: visible;
+}
+
+
+#phoebe-gallery {
+    background: linear-gradient(rgb(187, 187, 187), white);
+    
+    position: fixed;
+    top: 100vh;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+
+    transition: top 0.5s;
+}
+#phoebe-gallery button {
+    color: black;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+}
+
+
+@media (min-width: 45rem) {
+    #phoebe-info h1 {
+        position: relative;
+        bottom: 0;
+    }
+    #phoebe-info button{
+        position: relative;
+        bottom: 0;
+        right: auto;
+    }
+    #phoebe-info a {
+        position: relative;
+        bottom: 0;
+        left: auto;
+        margin-left: 1px;
+    }
+    #phoebe-info p {
+        display: block;
+        margin-left: 1px;
+    }
+
+    #phoebe-gallery {
+        right: -100%;
+        top: 0;
+        width: 65vw;
+        transition: right 0.5s;
+    }
+}

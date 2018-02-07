@@ -1,0 +1,85 @@
+#mario, #mario-stationary {
+    background-image: url('../img/mario-background.jpg');
+    background-size: cover;
+    background-position: top center;
+    text-align: right;
+}
+#mario-stationary {
+    margin: 0 0 0 65vw;
+    width: 65vw;
+}
+
+
+#mario-info {
+    margin-left: 8px;
+}
+#mario-info h1 {
+    position: absolute;
+    bottom: 4%;
+}
+#mario-info button{
+    position: absolute;
+    bottom: 2%;
+    right: 4px;
+}
+#mario-info a {
+    position: absolute;
+    bottom: 2%;
+    left: 4px;
+}
+#mario-info p {
+    display: none;
+}
+#mario:hover #mario-info {
+    visibility: visible;
+}
+
+
+#mario-gallery {
+    background: linear-gradient(rgb(128, 115, 87), rgb(177, 160, 145));
+    position: fixed;
+    top: 100vh;
+    height: 100vh;
+    transition: top 0.5s;
+    z-index: 1;
+}
+#mario-gallery button {
+    color: black;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+}
+
+
+@media (min-width: 45rem) {
+    #mario-info h1 {
+        position: relative;
+        bottom: 0;
+    }
+    #mario-info button{
+        position: relative;
+        bottom: 0;
+        right: auto;
+    }
+    #mario-info a {
+        position: relative;
+        bottom: 0;
+        left: auto;
+        margin-left: 1px;
+    }
+    #mario-info p {
+        display: block;
+        margin-left: 1px;
+    }
+
+    #mario-gallery {
+        left: -100%;
+        top: 0;
+        width: 65vw;
+        transition: left 0.5s;
+    }
+    #mario-gallery button {
+        left: auto;
+        right: 4px;
+    }
+}
