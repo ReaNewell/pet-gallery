@@ -44,10 +44,9 @@
     z-index: 1;
 }
 #mario-gallery button {
-    color: black;
-    position: absolute;
-    bottom: 4px;
-    left: 4px;
+    color: white;
+    font-weight: bold;
+    margin: 5px 0;
 }
 
 
