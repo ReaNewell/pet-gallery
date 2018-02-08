@@ -38,7 +38,7 @@
     
     position: fixed;
     top: 100vh;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     z-index: 1;
 
@@ -47,6 +47,9 @@
 #phoebe-gallery button {
     color: white;
     margin: 5px 0;
+}
+.gallery-container img:last-child {
+    margin-bottom: 4rem;
 }
 
 
